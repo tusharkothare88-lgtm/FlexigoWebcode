@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+@theme {
+  --color-flexigo-primary: #14532D;
+  --color-flexigo-teal: #22C55E;
+  --color-flexigo-accent: #86EFAC;
+  --color-flexigo-bg: #F0FDF4;
+  --color-flexigo-dark: #052E16;
+
+  --font-heading: "Outfit", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+:root {
+  /* Theme Colors - Unified B2B Scale (Explicitly emitted to DOM for var() usage) */
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #F1F5F9;
+  --text-primary: #0F172A;
+  --text-secondary: #0F172A;
+  /* Slate 900 for absolute supreme legibility */
+  --text-tertiary: #334155;
+  /* Slate 700 for sharp metadata */
+  --border-subtle: #CBD5E1;
+  /* Slate 300 */
+
+  --accent-green: #10b981;
+  --accent-blue: #3b82f6;
+}
+
+
+.dark {
+  --bg-primary: #020617;
+  /* Slate 950 */
+  --bg-secondary: #0F172A;
+  /* Slate 900 */
+  --bg-tertiary: #1E293B;
+  /* Slate 800 */
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-tertiary: #64748B;
+  --border-subtle: rgba(51, 65, 85, 0.4);
+}
+
+@layer base {
+  * {
+    border-color: var(--border-subtle);
+  }
+
+  *::selection {
+    background-color: rgba(16, 185, 129, 0.3);
+    /* selection:bg-emerald-500/30 */
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-ua-font-smoothing: grayscale;
+    transition: color 300ms, background-color 300ms;
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: clip;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.025em;
+    /* tracking-tight */
+  }
+
+  button,
+  a {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+
+  button:focus,
+  a:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .animate-lift {
+    @apply transition-all duration-300 ease-[var(--ease-out-expo)] hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/5 hover:scale-[var(--scale-hover)] active:scale-[var(--scale-active)];
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+
+  .no-scrollbar::-webkit-scrollbar-track {
+    background: rgba(16, 185, 129, 0.03);
+    border-radius: 9999px;
+  }
+
+  .no-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(16, 185, 129, 0.2);
+    border-radius: 9999px;
+  }
+
+  .no-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(16, 185, 129, 0.4);
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: auto;
+    scrollbar-width: auto;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-white/20;
+  }
+
+  .custom-scrollbar-emerald::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+
+  .custom-scrollbar-emerald::-webkit-scrollbar-track {
+    background: rgba(16, 185, 129, 0.03);
+    border-radius: 9999px;
+  }
+
+  .custom-scrollbar-emerald::-webkit-scrollbar-thumb {
+    background: rgba(16, 185, 129, 0.3);
+    border-radius: 9999px;
+  }
+
+  .custom-scrollbar-emerald::-webkit-scrollbar-thumb:hover {
+    background: rgba(16, 185, 129, 0.5);
+  }
+
+  .landing-page-theme {
+    --color-flexigo-primary: #1A2A6B;
+    /* Navy Blue - from logo */
+    --color-flexigo-teal: #F97316;
+    /* Vivid Orange - from accents */
+    --color-flexigo-accent: #FFD700;
+    /* Yellow - from lightning icon */
+    --color-flexigo-bg: #FFFFFF;
+    --color-flexigo-dark: #1C1C1C;
+
+    /* Selection color for landing page */
+    --selection-bg: rgba(249, 115, 22, 0.3);
+    /* Orange selection */
+  }
+}

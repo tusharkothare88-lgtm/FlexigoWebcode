@@ -1,0 +1,47 @@
+
+> frontend@0.0.0 lint
+> eslint .
+
+
+C:\Users\AnkitAhirwar\OneDrive\Desktop\Flexigo\frontend\check.js
+  1:22  error  'require' is not defined  no-undef
+  2:12  error  'require' is not defined  no-undef
+
+C:\Users\AnkitAhirwar\OneDrive\Desktop\Flexigo\frontend\src\modules\website\web-components\CtaSection.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\AnkitAhirwar\OneDrive\Desktop\Flexigo\frontend\src\modules\website\web-components\FeaturesSection.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\AnkitAhirwar\OneDrive\Desktop\Flexigo\frontend\src\modules\website\web-components\FooterSection.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\AnkitAhirwar\OneDrive\Desktop\Flexigo\frontend\src\modules\website\web-components\HeroSection.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\AnkitAhirwar\OneDrive\Desktop\Flexigo\frontend\src\modules\website\web-components\HowItWorksSection.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\AnkitAhirwar\OneDrive\Desktop\Flexigo\frontend\src\modules\website\web-components\MapSection.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\AnkitAhirwar\OneDrive\Desktop\Flexigo\frontend\src\modules\website\web-components\Navbar.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\AnkitAhirwar\OneDrive\Desktop\Flexigo\frontend\src\modules\website\web-components\PlatformEcosystemSection.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\AnkitAhirwar\OneDrive\Desktop\Flexigo\frontend\src\modules\website\web-components\PricingSection.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\AnkitAhirwar\OneDrive\Desktop\Flexigo\frontend\src\modules\website\web-components\StatsSection.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\AnkitAhirwar\OneDrive\Desktop\Flexigo\frontend\src\modules\website\web-components\TestimonialsSection.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\AnkitAhirwar\OneDrive\Desktop\Flexigo\frontend\src\modules\website\web-components\VehicleShowcaseSection.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+✖ 14 problems (14 errors, 0 warnings)
+
